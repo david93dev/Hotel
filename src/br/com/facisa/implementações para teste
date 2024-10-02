@@ -1,0 +1,17 @@
+       Funcionario novoFuncionario1 = new Funcionario("12345678910", "Fulano", "Rua", "12345678", "16/04/1993", "Gerencia", Turno.NOITE, 1000);
+       gPessoas.adicionarFuncionario(novoFuncionario1);
+
+       Quarto novoQuarto1 = new Quarto("1", TipoQuarto.CASAL, 2, StatusQuarto.DISPONIVEL, 1000);
+       gQuarto.adiconarQuartoLista(novoQuarto1);
+
+       Quarto novoQuarto2 = new Quarto("2", TipoQuarto.CASAL, 2, StatusQuarto.OCUPADO, 1000);
+       gQuarto.adiconarQuartoLista(novoQuarto2);
+
+       Hospede novoHospede1 = new Hospede("10183689496", "Alguém", "Rua", "8399133191", "16/04/1993", "All-Inclusive");
+       gPessoas.adicionarHospedeLista(novoHospede1);
+
+       Reserva novaReserva1 = new Reserva(novoHospede1, novoQuarto2, "15/09/2024", "20/09/2024");
+       gReserva.adiconarReservaLista(novaReserva1);
+
+       Reserva novaReserva2 = new Reserva(novoHospede1, novoQuarto1, "11/09/2024", "20/09/2024");
+       gReserva.adiconarReservaLista(novaReserva2);
